@@ -1,0 +1,282 @@
+#wrapper {
+  width: 100%;
+  max-width: 1400px;
+  display: block;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 2px solid #2c8b0f;
+  background-color: #0d472f;
+  height: 70px;
+}
+
+#file {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#file--open {
+  display: none;
+  width: 180px;
+  height: 120px;
+  border-radius: 5%;
+  border: 1px solid green;
+  background-color: #e2e2f0;
+  text-align: center;
+  padding: 5px;
+  margin-left: 40px;
+  line-height: 25px;
+}
+
+.button {
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-bottom: 0px;
+}
+
+button {
+  width: 60px;
+  height: 50px;
+  margin: 20px;
+}
+
+#pix512 {
+  width: 70px;
+}
+
+p {
+  font-size: 20px;
+  color: #0b352e;
+  margin-left: 5%;
+}
+
+#clear:hover, #save:hover, #open:hover, #saveAsImage:hover {
+  background-color: #0b352e;
+  color: white;
+}
+
+.workingBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 520px;
+}
+
+.workingBlock--drawingTools {
+  width: 20%;
+  background-color: gray;
+  position: relative;
+}
+
+.workingBlock--screen {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.workingBlock--formatingTools {
+  width: 20%;
+  background-color: gray;
+}
+
+#palette {
+  width: 150px;
+  height: 60px;
+  border: 1px solid black;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+  border-radius: 10%;
+}
+
+#white, #black, #red, #blue, #yellow, #green {
+  width: 50px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 10%;
+}
+
+.color-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#white {
+  background-color: white;
+}
+
+#black {
+  background-color: black;
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#green {
+  background-color: green;
+}
+
+#curColor, #prevColor {
+  width: 60px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 15%;
+  margin-top: 20px;
+  margin-left: 10%;
+  font-size: 15px;
+  text-align: center;
+}
+
+.choosenColor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#keyboard {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.row {
+  border: 1px solid black;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 672px;
+}
+
+.row button {
+  height: 30px;
+  width: 40px;
+  margin: 0;
+  color: white;
+  background-color: black;
+}
+
+#backspace, #shift {
+  width: 100px;
+}
+
+#capslock, #enter {
+  width: 70px;
+}
+
+#space {
+  width: 300px;
+}
+
+#tab {
+  width: 60px;
+}
+
+#textInCanvas {
+  margin-top: 10%;
+  margin-left: 30%;
+  position: absolute;
+  z-index: 100;
+  top: 50px;
+  left: 50px;
+  display: none;
+}
+
+canvas {
+  border: 2px solid black;
+}
+
+#pencilSizeShow {
+  width: 50px;
+  height: 25px;
+  margin-left: 5%;
+  border: 1px solid black;
+  background-color: violet;
+  font-size: 15px;
+  text-align: center;
+  color: #2a2e29;
+  padding-top: 5px;
+}
+
+#pencilSize {
+  margin-left: 5%;
+}
+
+#size5, #size10, #size30 {
+  width: 60px;
+  height: 30px;
+  background-color: wheat;
+  margin: 5px;
+  margin-left: 5%;
+}
+
+.animation--slides {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+
+#canvasFirst:hover, #canvasSecond:hover, #canvasThird:hover {
+  border: 3px solid brown;
+}
+
+#animationSave, #animationPlay, #animationStop {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+}
+
+#animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=style.css.map */
